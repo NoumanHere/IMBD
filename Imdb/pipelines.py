@@ -11,7 +11,7 @@ class MongodbPipeline(object):
     collection_name = "best_movies"
 
     def open_spider(self,spider):
-        self.client = pymongo.MongoClient("mongodb+srv://Nouman:GDfieBq8Mjxe4QAk@cluster0-fpdvh.mongodb.net/test?retryWrites=true&w=majority")
+        self.client = pymongo.MongoClient("mongodb+srv://Nouman:***********@cluster0-fpdvh.mongodb.net/test?retryWrites=true&w=majority")
         self.db = self.client["IMDB"]
 
     def close_spider(self,spider):
